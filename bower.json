@@ -1,0 +1,22 @@
+{
+  "name": "5vs5 Viewer",
+  "version": "0.0.0",
+  "authors": [
+    "paxpelus <panagiotis.iatrou@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "semantic-ui": "*",
+    "fontawesome": "*",
+    "moment": "*"
+  }
+}
