@@ -1,3 +1,39 @@
-body{
+body
+{
     background:#efefef;
+    padding-top:30px;
 }
+
+.grid
+{
+    background: #fff;
+}
+
+.scoreboard, .timeboard, .status
+{
+    text-align:center;
+    font-family: 'Play', sans-serif;
+    margin-bottom:10px;
+}
+
+.scoreboard {font-size: 68px;margin-top:30px;}
+.status {font-size:20px;}
+.timeboard {font-size:30px;}
+
+.log
+{
+    font-size:24px;
+    text-align:center;
+    margin-bottom:0;
+}
+
+.data-color
+{
+    margin-left:10px!important;
+    position:relative;
+    top:-2px;
+}
+
+/* Helpers */
+
+.text-center { text-align:center!important;}

@@ -9,11 +9,95 @@
 
         <link href="/vendor/semantic-ui/dist/semantic.min.css" rel="stylesheet">
         <link href="/vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+        
         <link href="/assets/css/style.css" rel="stylesheet">
     </head>
     <body>
         
-        <h1>Test</h1>
+        
+        <div class="ui container">
+            <div class="ui grid">
+              <div class="row">
+                <div class="six wide column">
+                    <h3><span class="data-home-team-name">Team A</span> <span class="ui label data-color data-home-color">&nbsp;</span></h3>
+                    <table class="ui compact table data-home-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th class='text-center'>Position</th>
+                                <th class='text-center'>Points</th>
+                                <th class='text-center'>Fouls</th>
+                                <th class='text-center'>Form</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="four wide column">
+                    <div class="timeboard data-time">&nbsp;</div>
+                    <div class="status data-status">&nbsp;</div>
+                    <div class="scoreboard data-score">0 : 0</div>
+                </div>
+                <div class="six wide column">
+                    <h3><span class="data-away-team-name">Team B</span> <span class="ui label data-color data-away-color">&nbsp;</span></h3>
+                    <table class="ui compact table data-away-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th class='text-center'>Position</th>
+                                <th class='text-center'>Points</th>
+                                <th class='text-center'>Fouls</th>
+                                <th class='text-center'>Form</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              
+              <div class="row">
+                  <div class="column">
+                      <hr>
+                      <p class="log data-log">&nbsp;</p>
+                      <hr>
+                  </div>
+              </div>
+              
+              <div class="row">
+                  <div class="column">
+                    <div class="ui top attached tabular menu">
+                      <a class="item active" data-tab="teamA">Team A</a>
+                      <a class="item" data-tab="versus">Versus</a>
+                      <a class="item" data-tab="teamB">Team B</a>
+                      <a class="item" data-tab="log">Log</a>
+                    </div>
+                    <div class="ui bottom attached tab segment active" data-tab="teamA">
+                      First
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="versus">
+                      Second
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="teamB">
+                      Third
+                    </div>
+                    <div class="ui bottom attached tab segment" data-tab="log">
+                      Third
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+            
+            
+        </div>
+        
+        
         
         <script src="/vendor/jquery/dist/jquery.min.js"></script>
         <script src="/vendor/moment/min/moment.min.js"></script>
