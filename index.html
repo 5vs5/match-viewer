@@ -15,9 +15,7 @@
         <link href="/assets/css/style.css" rel="stylesheet">
     </head>
     <body>
-        
-        
-        <div class="ui container">
+        <div class="ui container fluid">
             <div class="ui grid">
               <div class="row">
                 <div class="six wide column">
@@ -72,22 +70,398 @@
               <div class="row">
                   <div class="column">
                     <div class="ui top attached tabular menu">
-                      <a class="item active" data-tab="teamA">Team A</a>
-                      <a class="item" data-tab="versus">Versus</a>
-                      <a class="item" data-tab="teamB">Team B</a>
+                      <a class="item active data-home-team-name" data-tab="teamA">Team A</a>
+                      <a class="item " data-tab="versus">Versus</a>
+                      <a class="item data-away-team-name" data-tab="teamB">Team B</a>
                       <a class="item" data-tab="log">Log</a>
                     </div>
                     <div class="ui bottom attached tab segment active" data-tab="teamA">
-                      First
+                        <div class="ui secondary menu">
+                            <a class="item active" data-tab="home-stats">Statistics</a>
+                            <a class="item" data-tab="home-physical">Physical</a>
+                            <a class="item" data-tab="home-offensive">Offensive</a>
+                            <a class="item" data-tab="home-defensive">Defensive</a>
+                        </div>
+                        
+                        <div class="ui tab active" data-tab="home-stats">
+                            <table class="ui compact table data-home-stats-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>Points</th>
+                                        <th class='text-center'>2 Points</th>
+                                        <th class='text-center'>3 Points</th>
+                                        <th class='text-center'>Free Throws</th>
+                                        <th class='text-center'>Assists</th>
+                                        <th class='text-center'>Steals</th>
+                                        <th class='text-center'>Block</th>
+                                        <th class='text-center'>Def. Rebounds</th>
+                                        <th class='text-center'>Off. Rebounds</th>
+                                        <th class='text-center'>Turnovers</th>
+                                        <th class='text-center'>Play Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="home-physical">
+                            <table class="ui compact table data-home-physical-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>Age</th>
+                                        <th class='text-center'>Height</th>
+                                        <th class='text-center'>Jumping</th>
+                                        <th class='text-center'>Speed</th>
+                                        <th class='text-center'>Power</th>
+                                        <th class='text-center'>Stamina</th>
+                                        <th class='text-center'>Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="home-offensive">
+                            <table class="ui compact table data-home-offensive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>3 Points</th>
+                                        <th class='text-center'>2 Points</th>
+                                        <th class='text-center'>Free Throws</th>
+                                        <th class='text-center'>Ball Handling</th>
+                                        <th class='text-center'>Passing</th>
+                                        <th class='text-center'>Offensive Rebounds</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="home-defensive">
+                            <table class="ui compact table data-home-defensive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>Marking</th>
+                                        <th class='text-center'>Stealing</th>
+                                        <th class='text-center'>Blocking</th>
+                                        <th class='text-center'>Defensive Rebounds</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="ui bottom attached tab segment" data-tab="versus">
-                      Second
+                        <div class="ui secondary menu">
+                            <a class="item active" data-tab="vs-stats">Statistics</a>
+                            <a class="item" data-tab="vs-physical">Physical</a>
+                            <a class="item" data-tab="vs-offensive">Offensive</a>
+                            <a class="item" data-tab="vs-defensive">Defensive</a>
+                        </div>
+                        
+                        <div class="ui tab active" data-tab="vs-stats">
+                            <div class="ui grid">
+                                <div class="row">
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-home-vs-stats-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>POS</th>
+                                                    <th class='text-center'>PTS</th>
+                                                    <th class='text-center'>2P</th>
+                                                    <th class='text-center'>3P</th>
+                                                    <th class='text-center'>FT</th>
+                                                    <th class='text-center'>ASS</th>
+                                                    <th class='text-center'>STL</th>
+                                                    <th class='text-center'>BLK</th>
+                                                    <th class='text-center'>DER</th>
+                                                    <th class='text-center'>OFR</th>
+                                                    <th class='text-center'>TRN</th>
+                                                    <th class='text-center'>MIN</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-away-vs-stats-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>POS</th>
+                                                    <th class='text-center'>PTS</th>
+                                                    <th class='text-center'>2P</th>
+                                                    <th class='text-center'>3P</th>
+                                                    <th class='text-center'>FT</th>
+                                                    <th class='text-center'>ASS</th>
+                                                    <th class='text-center'>STL</th>
+                                                    <th class='text-center'>BLK</th>
+                                                    <th class='text-center'>DER</th>
+                                                    <th class='text-center'>OFR</th>
+                                                    <th class='text-center'>TRN</th>
+                                                    <th class='text-center'>MIN</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="vs-physical">
+                            <div class="ui grid">
+                                <div class="row">
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-home-vs-physical-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>Position</th>
+                                                    <th class='text-center'>Age</th>
+                                                    <th class='text-center'>Height</th>
+                                                    <th class='text-center'>Jumping</th>
+                                                    <th class='text-center'>Speed</th>
+                                                    <th class='text-center'>Power</th>
+                                                    <th class='text-center'>Stamina</th>
+                                                    <th class='text-center'>Form</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-away-vs-physical-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>Position</th>
+                                                    <th class='text-center'>Age</th>
+                                                    <th class='text-center'>Height</th>
+                                                    <th class='text-center'>Jumping</th>
+                                                    <th class='text-center'>Speed</th>
+                                                    <th class='text-center'>Power</th>
+                                                    <th class='text-center'>Stamina</th>
+                                                    <th class='text-center'>Form</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="vs-offensive">
+                            <div class="ui grid">
+                                <div class="row">
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-home-vs-offensive-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>Position</th>
+                                                    <th class='text-center'>3 Points</th>
+                                                    <th class='text-center'>2 Points</th>
+                                                    <th class='text-center'>Free Throws</th>
+                                                    <th class='text-center'>Ball Handling</th>
+                                                    <th class='text-center'>Passing</th>
+                                                    <th class='text-center'>Offensive Rebounds</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-away-vs-offensive-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>Position</th>
+                                                    <th class='text-center'>3 Points</th>
+                                                    <th class='text-center'>2 Points</th>
+                                                    <th class='text-center'>Free Throws</th>
+                                                    <th class='text-center'>Ball Handling</th>
+                                                    <th class='text-center'>Passing</th>
+                                                    <th class='text-center'>Offensive Rebounds</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="vs-defensive">
+                            <div class="ui grid">
+                                <div class="row">
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-home-vs-defensive-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>Position</th>
+                                                    <th class='text-center'>Marking</th>
+                                                    <th class='text-center'>Stealing</th>
+                                                    <th class='text-center'>Blocking</th>
+                                                    <th class='text-center'>Defensive Rebounds</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="eight wide column">
+                                        <table class="ui compact table data-away-vs-defensive-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class='text-center'>Position</th>
+                                                    <th class='text-center'>Marking</th>
+                                                    <th class='text-center'>Stealing</th>
+                                                    <th class='text-center'>Blocking</th>
+                                                    <th class='text-center'>Defensive Rebounds</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="ui bottom attached tab segment" data-tab="teamB">
-                      Third
+                        
+                        <div class="ui secondary menu">
+                            <a class="item active" data-tab="away-stats">Statistics</a>
+                            <a class="item" data-tab="away-physical">Physical</a>
+                            <a class="item" data-tab="away-offensive">Offensive</a>
+                            <a class="item" data-tab="away-defensive">Defensive</a>
+                        </div>
+                        
+                        <div class="ui tab active" data-tab="away-stats">
+                            <table class="ui compact table data-away-stats-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>Points</th>
+                                        <th class='text-center'>2 Points</th>
+                                        <th class='text-center'>3 Points</th>
+                                        <th class='text-center'>Free Throws</th>
+                                        <th class='text-center'>Assists</th>
+                                        <th class='text-center'>Steals</th>
+                                        <th class='text-center'>Block</th>
+                                        <th class='text-center'>Def. Rebounds</th>
+                                        <th class='text-center'>Off. Rebounds</th>
+                                        <th class='text-center'>Turnovers</th>
+                                        <th class='text-center'>Play Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="away-physical">
+                            <table class="ui compact table data-away-physical-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>Age</th>
+                                        <th class='text-center'>Height</th>
+                                        <th class='text-center'>Jumping</th>
+                                        <th class='text-center'>Speed</th>
+                                        <th class='text-center'>Power</th>
+                                        <th class='text-center'>Stamina</th>
+                                        <th class='text-center'>Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="away-offensive">
+                            <table class="ui compact table data-away-offensive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>3 Points</th>
+                                        <th class='text-center'>2 Points</th>
+                                        <th class='text-center'>Free Throws</th>
+                                        <th class='text-center'>Ball Handling</th>
+                                        <th class='text-center'>Passing</th>
+                                        <th class='text-center'>Offensive Rebounds</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="ui tab" data-tab="away-defensive">
+                            <table class="ui compact table data-away-defensive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th class='text-center'>Position</th>
+                                        <th class='text-center'>Marking</th>
+                                        <th class='text-center'>Stealing</th>
+                                        <th class='text-center'>Blocking</th>
+                                        <th class='text-center'>Defensive Rebounds</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
                     </div>
                     <div class="ui bottom attached tab segment" data-tab="log">
-                      Third
+                        <div class="ui divided list relaxed data-long-log">
+                          
+                        </div>
                     </div>
                   </div>
               </div>
